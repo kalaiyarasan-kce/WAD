@@ -1,0 +1,65 @@
+<html>
+<head><title>grid</title>
+<style>
+.grid-container{
+display:grid;
+grid-template-columns:200px 200px 300px; 
+grid-template-rows:100px 100px 100px;
+grid-column-gap: 10px;
+grid-row-gap: 10px;
+padding: 10px;
+}
+.grid-item_a{
+background-color: aquamarine;
+grid-column:span 3;
+
+}
+.grid-item_b{
+background-color:yellow;
+grid-row: span 3;
+}
+.grid-item_c{
+background-color:orange;
+text-align: center;
+grid-row:span 2 ;
+}
+.grid-item_d{
+background-color:red;
+grid-row:span 3;
+}
+.grid-item_e{
+background-color:cyan;
+grid-row:span 1;
+}
+form{
+text-align: center;
+}
+</style></head>
+<body>
+<div class="grid-container">
+<div class="grid-item_a"><b>GREEN</b></div>
+<div class="grid-item_b"><b>YELLOW</b><form>
+<p> 
+<input type="text" placeholder="1" ></p><br>
+<p>
+<input type="text" placeholder="2" ></p><br>
+<p> 
+<input type="text" placeholder="3" ></p><br>
+<p> 
+<input type="text" placeholder="4" ></p><br>
+</form></div>
+<div class="grid-item_c"><b>ORANGE</b></div>
+<div class="grid-item_d"><b>RED</b><form>
+<p> 
+<input type="text" placeholder="A" ></p><br>
+<p>
+<input type="text" placeholder="B" ></p><br>
+<p>
+<input type="text" placeholder="C" ></p><br>
+<p>
+<input type="text" placeholder="D" ></p><br>
+</form></div>
+<div class="grid-item_e"><b>BLUE</b></div>
+</div>
+</body>
+</html>
