@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script>
+        function validateForm() {
+          
+            const name = document.getElementById('name').value;
+            const password = document.getElementById('password').value;
+            const namePattern = /^[a-zA-Z0-9]*$/; 
+            if (name === '' || password === '') {
+                alert('All fields must be filled.');
+                return false;
+            }
+            if (!namePattern.test(name)) {
+                alert('Name should not contain any special characters.');
+                return false;
+            }
+            if (password.length < 5 || password.length > 8) {
+                alert('Password should be between 5 and 8 characters long.');
+                return false;
+            }
+
+            
+            alert('Form submitted successfully!');
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <label for="name">  Enter your Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+        
+        <label for="password"> Enter your Password:</label>
+        <input type="password" id="password" name="password"><br><br>
+        <p>
+            which year?
+            <input type="radio" name="name" id="">
+            <label for="name">yer 1</label>
+            <input type="radio" name="name">
+            <label for="name">yer 2</label>
+            <input type="radio" name="name" id="">
+            <label for="name">yer 3 </label>
+            </p>
+            <p>
+                subject registered:
+                <input type="checkbox" name="check" id="">E101
+                <input type="checkbox" name="check" id="">E102
+                <input type="checkbox" name="check" id="">E103
+            </p>
+                <p>select Day:
+                    <select name="select" id="select">
+                    <option value="MON">MON</option>
+                    <option value="TUE">TUE</option>
+                    <option value="WED">WED</option>
+                    <option value="THU">THU</option>
+                    </select>
+                    </p>
+            </p>
+            <textarea></textarea>
+            </p>
+        <input type="submit" value="Submit"> <button>clear</button>
+    </form>
+</body>
+</html>
