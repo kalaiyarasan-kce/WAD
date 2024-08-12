@@ -1,0 +1,14 @@
+.size{
+    border: solid purple 5Px;
+    border-spacing: 10px;
+    text-align: auto;
+    padding: auto;
+    width: 500px;
+}
+.padd{
+    border:  solid purple 5px;
+    border-spacing: 10px;
+    text-align: left;
+    padding: auto;
+    width: 500px;
+}
