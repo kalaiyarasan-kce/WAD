@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function validateForm() {
+            const name = document.getElementById('name').value; 
+            if (name === '' ) {
+                alert('All fields must be filled.');
+                return false;
+            }
+             alert('Form submitted successfully!');
+            return true;
+        }
+    </script>
+</head>
+<body>
+    <table border="2px">
+        <form onsubmit="return validateForm()">
+            <tr>
+                <td style="background-color: rgb(184, 173, 233);">Name</td>
+                <td style="background-color: rgb(184, 173, 233);">Value</td>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <td>Sex</td>
+                <td><input type="radio" name="name">Male<br>
+                <input type="radio" name="name">Female</td>
+    
+            </tr>
+            <tr>
+                <td>Eye color</td>
+                <td> <select name="Select">
+                    <option value="Select">Green</option>
+                <option value="Select">black</option>
+                <option value="Select">blue</option>
+                <option value="Select">brown</option>
+            </select></td>
+            </tr>
+            <tr>
+                <td>check all that apply</td>
+                <td>
+                    <input type="checkbox">over 6 feet tall<br>
+                    <input type="checkbox">over 200 pounds<br> </td>
+            </tr>
+            <tr>
+                <td colspan="2">describe your athletic ability:<br>
+                <textarea ></textarea></td>
+            </tr>
+            <tr>
+                <td colspan="2" ><center><input type="submit" name="Submit"><button>Enter my information</button></center></td>
+            </tr>
+
+       
+    </form>
+ </table>
+</body>
+</html>
