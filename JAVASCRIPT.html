@@ -33,7 +33,7 @@
     </script>
 </head>
 <body>
-    <form onsubmit="return validateForm()" id="myForm">
+    <form id="myForm">
         <label for="name">  Enter your Name:</label>
         <input type="text" id="name" name="name"><br><br>
         
@@ -65,7 +65,7 @@
             </p>
             <textarea></textarea>
             </p>
-        <input type="submit" value="Submit">
+        <input type="submit" onclick="validateForm()" value="Submit">
          <!-- <button type="submit">submit</button>  -->
          <input type="button" onclick="myFunction()" value="Clear">
     </form>
