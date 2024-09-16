@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE retailStore SYSTEM "retailStore.dtd">
+<retailStore>
+    <shop>
+        <shop_name>SuperMart</shop_name>
+        <shop_location>coimbatore</shop_location>
+        <total_items>1500</total_items>
+        <home_delivery>true</home_delivery>
+        <total_revenue>10000</total_revenue>
+    </shop>
+    <shop>
+        <shop_name>ElectroWorld</shop_name>
+        <shop_location>chennai</shop_location>
+        <total_items>300</total_items>
+        <home_delivery>false</home_delivery>
+        <total_revenue>150000</total_revenue>
+    </shop>
+</retailStore>
+//dtd file//
+<!ELEMENT retailStore (shop+)>
+<!ELEMENT shop (shop_name, shop_location, total_items, home_delivery, total_revenue)>
+<!ELEMENT shop_name (#PCDATA)>
+<!ELEMENT shop_location (#PCDATA)>
+<!ELEMENT total_items (#PCDATA)>
+<!ELEMENT home_delivery (#PCDATA)>
+<!ELEMENT total_revenue (#PCDATA)>
